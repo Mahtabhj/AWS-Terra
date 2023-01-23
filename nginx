@@ -1,0 +1,8 @@
+location /t1 {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                proxy_pass http://3.234.212.246:9999/t1.html ;
+        }
+        location /t2 {
+        proxy_pass http://3.234.212.246:9999/t2.html ;
+        }
